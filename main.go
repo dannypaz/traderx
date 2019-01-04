@@ -1,4 +1,4 @@
-package traderx
+package main
 
 import (
 	"github.com/dannypaz/traderx/cmd"
