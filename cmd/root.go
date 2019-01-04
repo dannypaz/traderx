@@ -5,6 +5,7 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
+	"github.com/dannypaz/traderx/broker_rpc"
 )
 
 var rpcAddress string
@@ -14,7 +15,7 @@ var rootCmd = &cobra.Command{
 	Short: "Traderx is a CLI utility for the sparkswap broker",
 	Long:  "A Fast and Flexible CLI utility for the sparkswap broker\nBuilt with love by dannypaz",
 	Run: func(cmd *cobra.Command, args []string) {
-		// Do Stuff Here
+		broker_rpc.HealthCheck()
 	},
 }
 
